@@ -23,7 +23,7 @@ const apps = [
     catchphrase: "計算の力でUFOを撃退せよ！",
     description:
       "たし算・ひき算・かけ算・わり算・小数・分数など、いろいろな計算を練習できます。正しい答えを選んでUFOをたおし、宇宙計算マスターを目指そう！",
-    tags: ["計算練習", "小数・分数", "1分・3分チャレンジ"],
+    tags: ["計算練習", "1分・3分チャレンジ"],
     icon: "🚀",
     url: "https://taka-t-p.github.io/space-calculation-game/",
     theme: "space",
