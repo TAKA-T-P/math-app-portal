@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="KEC数学科ラボ">
+  <rect width="64" height="64" rx="14" fill="#161a2e"/>
+  <path d="M26 10h12v14l11 20a5 5 0 0 1-4.4 7.4H19.4A5 5 0 0 1 15 44l11-20z"
+        fill="none" stroke="#ffb703" stroke-width="3.2" stroke-linejoin="round"/>
+  <path d="M23 38h18" stroke="#ffb703" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M32 24v14M25 31h14" stroke="#4fc3f7" stroke-width="3.6" stroke-linecap="round"/>
+</svg>
