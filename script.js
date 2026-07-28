@@ -43,6 +43,20 @@ const apps = [
     theme: "wordproblem",
   },
   {
+    id: "mul-add-puzzle",
+    category: "elementary",
+    title: "かけ×たし+パズル",
+    subtitle: "",
+    grades: "小学3年生以上",
+    catchphrase: "横はかけ算、縦はたし算。数字を並べて謎を解こう！",
+    description:
+      "数字を1回ずつ使い、横はかけ算、縦はたし算の答えに合うようにマスを埋める数字パズルです。じっくり考えたり、タイムアタックに挑戦したりして、計算力とひらめきを鍛えよう！",
+    tags: ["かけ算・たし算", "数字パズル", "ひらめき・論理"],
+    icon: "🧩",
+    url: "https://taka-t-p.github.io/mul-add-panel/",
+    theme: "puzzle",
+  },
+  {
     id: "factorization-game",
     category: "juniorhigh",
     title: "因数×展開 FIGHT!",

@@ -378,6 +378,11 @@ main {
   --accent-2: #9ccc65;
 }
 
+.app-card[data-theme="puzzle"] {
+  --accent-1: #f59e0b;
+  --accent-2: #22d3aa;
+}
+
 .app-card[data-theme="factorization"] {
   --accent-1: #e53935;
   --accent-2: #ff9800;
