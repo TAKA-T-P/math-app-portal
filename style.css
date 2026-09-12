@@ -383,6 +383,11 @@ main {
   --accent-2: #22d3aa;
 }
 
+.app-card[data-theme="primeattack"] {
+  --accent-1: #123b72;
+  --accent-2: #2166b1;
+}
+
 .app-card[data-theme="factorization"] {
   --accent-1: #e53935;
   --accent-2: #ff9800;

@@ -9,6 +9,7 @@
  * category の値:
  *   "elementary"    小学生向け
  *   "juniorhigh"    中学生向け
+ *   "anyone"        だれでも楽しめる
  * 今後、"all"（小中学生共通）, "teacher"（講師向け）,
  * "new"（新着）, "developing"（開発中）なども追加できます。
  * ただし、画面に表示するには対応するセクション（コンテナ）が index.html 側に必要です。
@@ -44,10 +45,10 @@ const apps = [
   },
   {
     id: "mul-add-puzzle",
-    category: "elementary",
+    category: "anyone",
     title: "かけ×たし+パズル",
     subtitle: "",
-    grades: "小学3年生以上",
+    grades: "小学4年生以上",
     catchphrase: "横はかけ算、縦はたし算。数字を並べて謎を解こう！",
     description:
       "数字を1回ずつ使い、横はかけ算、縦はたし算の答えに合うようにマスを埋める数字パズルです。じっくり考えたり、タイムアタックに挑戦したりして、計算力とひらめきを鍛えよう！",
@@ -55,6 +56,20 @@ const apps = [
     icon: "🧩",
     url: "https://taka-t-p.github.io/mul-add-panel/",
     theme: "puzzle",
+  },
+  {
+    id: "prime-attack",
+    category: "anyone",
+    title: "プライム×アタック！",
+    subtitle: "",
+    grades: "小学4年生以上",
+    catchphrase: "すばやく素因数分解しよう！ 対戦型カードゲーム",
+    description:
+      "30 = 2×3×5 のように、大きな数を小さい数（素数）のかけ算に分けよう。相手より早く素数カードを出して、自分のカードを先になくしたら勝ちです！",
+    tags: ["かけ算・わり算", "素因数分解", "対戦"],
+    icon: "🃏",
+    url: "https://taka-t-p.github.io/PrimeAttack",
+    theme: "primeattack",
   },
   {
     id: "factorization-game",
@@ -103,6 +118,7 @@ const apps = [
 // category と、カードを挿入するコンテナ要素の id の対応表
 const CATEGORY_CONTAINER_IDS = {
   elementary: "elementary-apps",
+  anyone: "anyone-apps",
   juniorhigh: "juniorhigh-apps",
 };
 
