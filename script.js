@@ -72,6 +72,20 @@ const apps = [
     theme: "primeattack",
   },
   {
+    id: "nazoten",
+    category: "anyone",
+    title: "ナゾテン！",
+    subtitle: "～なぞって・たして・10の倍数～",
+    grades: "小学4年生以上",
+    catchphrase: "なぞって・たして、10の倍数をつくれ！",
+    description:
+      "数字のパネルをなぞって、合計が10・20・30・40などの「10の倍数」になる組み合わせを見つける数字パズルです。すばやく見つけてハイスコアをねらったり、じっくり考えたり、CPUや友だちとの対戦も楽しめます！",
+    tags: ["10の倍数", "数字パズル", "ひらめき・対戦"],
+    icon: "🔟",
+    url: "https://taka-t-p.github.io/nazoten_game/",
+    theme: "nazoten",
+  },
+  {
     id: "factorization-game",
     category: "juniorhigh",
     title: "因数×展開 FIGHT!",

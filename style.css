@@ -388,6 +388,11 @@ main {
   --accent-2: #2166b1;
 }
 
+.app-card[data-theme="nazoten"] {
+  --accent-1: #4f46e5;
+  --accent-2: #06b6d4;
+}
+
 .app-card[data-theme="factorization"] {
   --accent-1: #e53935;
   --accent-2: #ff9800;

@@ -18,7 +18,14 @@ HTML / CSS / JavaScript のみで構成された静的サイトで、GitHub Page
 | --- | --- | --- |
 | スペース計算ラリー | 小学1年生〜中学1年生 | https://taka-t-p.github.io/space-calculation-game/ |
 | 文章題クエスト！ | 小学4年生〜小学6年生 | https://taka-t-p.github.io/math-word-problem/ |
-| かけ×たし+パズル | 小学3年生以上 | https://taka-t-p.github.io/mul-add-panel/ |
+
+### だれでも楽しめる
+
+| アプリ名 | 対象学年 | URL |
+| --- | --- | --- |
+| かけ×たし+パズル | 小学4年生以上 | https://taka-t-p.github.io/mul-add-panel/ |
+| プライム×アタック！ | 小学4年生以上 | https://taka-t-p.github.io/PrimeAttack |
+| ナゾテン！ | 小学4年生以上 | https://taka-t-p.github.io/nazoten_game/ |
 
 ### 中学生向け
 
@@ -75,6 +82,8 @@ HTML / CSS / JavaScript のみで構成された静的サイトで、GitHub Page
 - `space`（青・水色）
 - `wordproblem`（緑・黄緑）
 - `puzzle`（黄色・青緑）
+- `primeattack`（紺）
+- `nazoten`（青紫・シアン）
 - `factorization`（赤・オレンジ）
 - `linear`（紫・青紫）
 - `labyrinth`（紺・金）
