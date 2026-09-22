@@ -141,8 +141,15 @@ button:focus-visible {
   margin-bottom: var(--space-sm);
 }
 
+.site-eyebrow {
+  font-size: clamp(1.5rem, 4vw, 1.9rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #d7dbf5;
+}
+
 .site-title {
-  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-size: clamp(1.44rem, 4vw, 2.4rem);
   font-weight: 800;
   letter-spacing: 0.02em;
 }
