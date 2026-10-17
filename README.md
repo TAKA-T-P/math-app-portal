@@ -23,6 +23,7 @@ HTML / CSS / JavaScript のみで構成された静的サイトで、GitHub Page
 
 | アプリ名 | 対象学年 | URL |
 | --- | --- | --- |
+| CUBE MASTER | 小学5年生以上 | https://taka-t-p.github.io/cube-master/ |
 | かけ×たし+パズル | 小学4年生以上 | https://taka-t-p.github.io/mul-add-panel/ |
 | プライム×アタック！ | 小学4年生以上 | https://taka-t-p.github.io/PrimeAttack |
 | ナゾテン！ | 小学4年生以上 | https://taka-t-p.github.io/nazoten_game/ |
@@ -81,6 +82,7 @@ HTML / CSS / JavaScript のみで構成された静的サイトで、GitHub Page
 
 - `space`（青・水色）
 - `wordproblem`（緑・黄緑）
+- `cube`（濃紺・水色）
 - `puzzle`（黄色・青緑）
 - `primeattack`（紺）
 - `nazoten`（青紫・シアン）

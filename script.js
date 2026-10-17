@@ -44,6 +44,20 @@ const apps = [
     theme: "wordproblem",
   },
   {
+    id: "cube-master",
+    category: "anyone",
+    title: "CUBE MASTER",
+    subtitle: "立方体を極める、空間認識トレーニングゲーム",
+    grades: "小学5年生以上",
+    catchphrase: "見抜け！ 回せ！ 組み立てろ！",
+    description:
+      "立方体の展開図や切断、位置関係、回転、積み木の見え方などを、動く立体で考える空間認識トレーニングゲームです。トレーニングや1分チャレンジ、段位認定に挑戦して、CUBE MASTERを目指そう！",
+    tags: ["立体・空間認識", "立方体", "段位認定"],
+    icon: "🧊",
+    url: "https://taka-t-p.github.io/cube-master/",
+    theme: "cube",
+  },
+  {
     id: "mul-add-puzzle",
     category: "anyone",
     title: "かけ×たし+パズル",

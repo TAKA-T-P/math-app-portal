@@ -385,6 +385,11 @@ main {
   --accent-2: #9ccc65;
 }
 
+.app-card[data-theme="cube"] {
+  --accent-1: #0c2d48;
+  --accent-2: #38bdf8;
+}
+
 .app-card[data-theme="puzzle"] {
   --accent-1: #f59e0b;
   --accent-2: #22d3aa;
