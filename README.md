@@ -35,6 +35,7 @@ HTML / CSS / JavaScript のみで構成された静的サイトで、GitHub Page
 | 因数×展開 FIGHT! | 中学3年生 | https://taka-t-p.github.io/Factorization-game/ |
 | リニア×コネクト！ | 中学1年生・中学2年生 | https://taka-t-p.github.io/linear-connect/ |
 | イコール・ラビリンス | 中学1年生〜中学3年生 | https://taka-t-p.github.io/equal-labyrinth/ |
+| 証明ハンター | 中学2年生 | https://taka-t-p.github.io/proof-hunter/ |
 
 ## 3. ファイル構成
 
@@ -89,6 +90,7 @@ HTML / CSS / JavaScript のみで構成された静的サイトで、GitHub Page
 - `factorization`（赤・オレンジ）
 - `linear`（紫・青紫）
 - `labyrinth`（紺・金）
+- `proof`（ブラウン・アンバーゴールド）
 
 新しい色を使いたい場合は、`style.css` に次のような形式を追加し、`script.js` 側の `theme` にその名前を指定してください。
 

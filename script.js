@@ -141,6 +141,20 @@ const apps = [
     url: "https://taka-t-p.github.io/equal-labyrinth/",
     theme: "labyrinth",
   },
+  {
+    id: "proof-hunter",
+    category: "juniorhigh",
+    title: "証明ハンター",
+    subtitle: "",
+    grades: "中学2年生",
+    catchphrase: "図形に隠された3つの根拠を探し出せ！",
+    description:
+      "図をタップして証明に必要な根拠を見つけたり、カードを組み合わせて証明文を完成させたりしながら、図形の証明をゲーム感覚で練習できます。段位認定にも挑戦して、証明マスターを目指そう！",
+    tags: ["図形の証明", "根拠を見つける", "段位認定"],
+    icon: "🔍",
+    url: "https://taka-t-p.github.io/proof-hunter/",
+    theme: "proof",
+  },
 ];
 
 // category と、カードを挿入するコンテナ要素の id の対応表
