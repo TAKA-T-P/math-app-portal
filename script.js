@@ -7,9 +7,8 @@
  * 表示順は配列の並び順（category が同じもの同士）で決まります。
  *
  * category の値:
- *   "elementary"    小学生向け
- *   "juniorhigh"    中学生向け
  *   "anyone"        だれでも楽しめる
+ *   "juniorhigh"    中学生向け
  * 今後、"all"（小中学生共通）, "teacher"（講師向け）,
  * "new"（新着）, "developing"（開発中）なども追加できます。
  * ただし、画面に表示するには対応するセクション（コンテナ）が index.html 側に必要です。
@@ -17,7 +16,7 @@
 const apps = [
   {
     id: "space-calculation",
-    category: "elementary",
+    category: "anyone",
     title: "スペース計算ラリー",
     subtitle: "",
     grades: "小学1年生〜中学1年生",
@@ -31,7 +30,7 @@ const apps = [
   },
   {
     id: "math-word-problem",
-    category: "elementary",
+    category: "anyone",
     title: "文章題クエスト！",
     subtitle: "",
     grades: "小学4年生〜小学6年生",
@@ -159,7 +158,6 @@ const apps = [
 
 // category と、カードを挿入するコンテナ要素の id の対応表
 const CATEGORY_CONTAINER_IDS = {
-  elementary: "elementary-apps",
   anyone: "anyone-apps",
   juniorhigh: "juniorhigh-apps",
 };
