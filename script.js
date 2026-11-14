@@ -249,7 +249,7 @@ function createAppCard(app, index) {
   details.appendChild(detailsInner);
   card.appendChild(details);
 
-  // ボタン行（くわしく ＋ ゲームをはじめる）
+  // ボタン行（くわしく ＋ はじめる）
   const actions = document.createElement("div");
   actions.className = "app-actions";
 
@@ -283,7 +283,7 @@ function createAppCard(app, index) {
   cta.className = "app-cta";
   cta.href = app.url;
   cta.setAttribute("aria-label", `${app.title}を開く`);
-  cta.textContent = "ゲームをはじめる";
+  cta.textContent = "はじめる";
 
   const arrow = document.createElement("span");
   arrow.className = "cta-arrow";
