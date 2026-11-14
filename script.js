@@ -46,7 +46,7 @@ const apps = [
     id: "cube-master",
     category: "anyone",
     title: "CUBE MASTER",
-    subtitle: "立方体を極める、空間認識トレーニングゲーム",
+    subtitle: "立方体を極める！空間認識トレーニング",
     grades: "小学4年生以上",
     catchphrase: "見抜け！ 回せ！ 組み立てろ！",
     description:
