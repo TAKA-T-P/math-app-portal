@@ -196,10 +196,17 @@ function createAppCard(app, index) {
   title.textContent = app.title;
   headingGroup.appendChild(title);
 
+  if (app.subtitle) {
+    const subtitle = document.createElement("p");
+    subtitle.className = "app-subtitle";
+    subtitle.textContent = app.subtitle;
+    headingGroup.appendChild(subtitle);
+  }
+
   header.appendChild(headingGroup);
   card.appendChild(header);
 
-  // 詳細エリア（サブタイトル・キャッチコピー・説明文・タグ）
+  // 詳細エリア（キャッチコピー・説明文・タグ）
   // 初期状態は閉じておき、「くわしく」ボタンで開閉する。
   const detailsId = `app-details-${app.id || index}`;
 
@@ -209,13 +216,6 @@ function createAppCard(app, index) {
 
   const detailsInner = document.createElement("div");
   detailsInner.className = "app-details-inner";
-
-  if (app.subtitle) {
-    const subtitle = document.createElement("p");
-    subtitle.className = "app-subtitle";
-    subtitle.textContent = app.subtitle;
-    detailsInner.appendChild(subtitle);
-  }
 
   // キャッチコピー
   if (app.catchphrase) {
