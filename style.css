@@ -209,7 +209,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: var(--space-md);
-  align-items: stretch;
+  align-items: start;
 }
 
 @media (min-width: 1100px) {
@@ -244,7 +244,6 @@ main {
   padding: var(--space-md);
   display: flex;
   flex-direction: column;
-  height: 100%;
   opacity: 0;
   transform: translateY(16px);
   animation: card-in 0.5s ease forwards;
@@ -268,7 +267,6 @@ main {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  margin-bottom: var(--space-sm);
 }
 
 .app-icon {
@@ -302,6 +300,34 @@ main {
   font-size: 0.85rem;
   color: var(--color-text-light);
   font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+/* ---------- 詳細エリア（開閉） ---------- */
+.app-details {
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  transition: grid-template-rows 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.app-details-inner {
+  min-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.app-card.is-expanded .app-details {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  transition: grid-template-rows 0.3s ease, visibility 0s;
+}
+
+.app-card.is-expanded .app-details-inner {
+  opacity: 1;
+  transition: opacity 0.25s ease 0.1s;
+  padding-top: var(--space-sm);
 }
 
 .app-catchphrase {
@@ -314,7 +340,6 @@ main {
 .app-description {
   color: var(--color-text-light);
   font-size: 0.92rem;
-  flex-grow: 1;
   margin-bottom: var(--space-sm);
 }
 
@@ -322,7 +347,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-bottom: var(--space-md);
+  margin: 0;
   list-style: none;
   padding: 0;
 }
@@ -336,7 +361,46 @@ main {
   border-radius: var(--radius-btn);
 }
 
+.app-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: var(--space-md);
+}
+
+.app-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+  background: var(--color-card-bg);
+  color: var(--accent-1);
+  font: inherit;
+  font-weight: 800;
+  font-size: 0.9rem;
+  border: 2px solid var(--accent-1);
+  border-radius: var(--radius-btn);
+  padding: 0.6rem 1rem;
+  min-height: 44px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.app-toggle:hover {
+  background: color-mix(in srgb, var(--accent-1) 10%, white);
+}
+
+.app-toggle .toggle-icon {
+  font-size: 0.7em;
+  transition: transform 0.25s ease;
+}
+
+.app-card.is-expanded .toggle-icon {
+  transform: rotate(180deg);
+}
+
 .app-cta {
+  flex: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -348,11 +412,10 @@ main {
   text-decoration: none;
   border: none;
   border-radius: var(--radius-btn);
-  padding: 0.9rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   min-height: 44px;
   cursor: pointer;
   transition: filter 0.15s ease, transform 0.15s ease;
-  margin-top: auto;
 }
 
 .app-cta:hover,
@@ -482,5 +545,13 @@ main {
 
   .app-cta:hover .cta-arrow {
     transform: none;
+  }
+
+  .app-details,
+  .app-card.is-expanded .app-details,
+  .app-details-inner,
+  .app-card.is-expanded .app-details-inner,
+  .app-toggle .toggle-icon {
+    transition: none;
   }
 }

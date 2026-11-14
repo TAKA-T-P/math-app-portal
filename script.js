@@ -196,27 +196,42 @@ function createAppCard(app, index) {
   title.textContent = app.title;
   headingGroup.appendChild(title);
 
+  header.appendChild(headingGroup);
+  card.appendChild(header);
+
+  // 詳細エリア（サブタイトル・キャッチコピー・説明文・タグ）
+  // 初期状態は閉じておき、「くわしく」ボタンで開閉する。
+  const detailsId = `app-details-${app.id || index}`;
+
+  const details = document.createElement("div");
+  details.className = "app-details";
+  details.id = detailsId;
+
+  const detailsInner = document.createElement("div");
+  detailsInner.className = "app-details-inner";
+
   if (app.subtitle) {
     const subtitle = document.createElement("p");
     subtitle.className = "app-subtitle";
     subtitle.textContent = app.subtitle;
-    headingGroup.appendChild(subtitle);
+    detailsInner.appendChild(subtitle);
   }
 
-  header.appendChild(headingGroup);
-  card.appendChild(header);
-
   // キャッチコピー
-  const catchphrase = document.createElement("p");
-  catchphrase.className = "app-catchphrase";
-  catchphrase.textContent = app.catchphrase || "";
-  card.appendChild(catchphrase);
+  if (app.catchphrase) {
+    const catchphrase = document.createElement("p");
+    catchphrase.className = "app-catchphrase";
+    catchphrase.textContent = app.catchphrase;
+    detailsInner.appendChild(catchphrase);
+  }
 
   // 説明文
-  const description = document.createElement("p");
-  description.className = "app-description";
-  description.textContent = app.description || "";
-  card.appendChild(description);
+  if (app.description) {
+    const description = document.createElement("p");
+    description.className = "app-description";
+    description.textContent = app.description;
+    detailsInner.appendChild(description);
+  }
 
   // 特徴タグ
   if (Array.isArray(app.tags) && app.tags.length > 0) {
@@ -228,8 +243,40 @@ function createAppCard(app, index) {
       tagItem.textContent = tag;
       tagList.appendChild(tagItem);
     });
-    card.appendChild(tagList);
+    detailsInner.appendChild(tagList);
   }
+
+  details.appendChild(detailsInner);
+  card.appendChild(details);
+
+  // ボタン行（くわしく ＋ ゲームをはじめる）
+  const actions = document.createElement("div");
+  actions.className = "app-actions";
+
+  const toggle = document.createElement("button");
+  toggle.type = "button";
+  toggle.className = "app-toggle";
+  toggle.setAttribute("aria-expanded", "false");
+  toggle.setAttribute("aria-controls", detailsId);
+
+  const toggleLabel = document.createElement("span");
+  toggleLabel.className = "toggle-label";
+  toggleLabel.textContent = "くわしく";
+  toggle.appendChild(toggleLabel);
+
+  const toggleIcon = document.createElement("span");
+  toggleIcon.className = "toggle-icon";
+  toggleIcon.textContent = "▼";
+  toggleIcon.setAttribute("aria-hidden", "true");
+  toggle.appendChild(toggleIcon);
+
+  toggle.addEventListener("click", () => {
+    const expanded = card.classList.toggle("is-expanded");
+    toggle.setAttribute("aria-expanded", String(expanded));
+    toggleLabel.textContent = expanded ? "とじる" : "くわしく";
+  });
+
+  actions.appendChild(toggle);
 
   // 開くボタン（通常のリンク＝現在のタブでの遷移。target属性は付けない）
   const cta = document.createElement("a");
@@ -244,7 +291,8 @@ function createAppCard(app, index) {
   arrow.setAttribute("aria-hidden", "true");
   cta.appendChild(arrow);
 
-  card.appendChild(cta);
+  actions.appendChild(cta);
+  card.appendChild(actions);
 
   return card;
 }
