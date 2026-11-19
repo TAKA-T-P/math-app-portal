@@ -27,6 +27,7 @@ HTML / CSS / JavaScript のみで構成された静的サイトで、GitHub Page
 | かけ×たし+パズル | 小学4年生以上 | https://taka-t-p.github.io/mul-add-panel/ |
 | プライム×アタック！ | 小学4年生以上 | https://taka-t-p.github.io/PrimeAttack |
 | ナゾテン！ | 小学4年生以上 | https://taka-t-p.github.io/nazoten_game/ |
+| フルーツめいろ！ | 小学4年生～ | https://TAKA-T-P.github.io/fruit-maze/ |
 
 ### 中学生向け
 
@@ -87,6 +88,7 @@ HTML / CSS / JavaScript のみで構成された静的サイトで、GitHub Page
 - `puzzle`（黄色・青緑）
 - `primeattack`（紺）
 - `nazoten`（青紫・シアン）
+- `fruit-maze`（ストロベリーレッド・ピンク）
 - `factorization`（赤・オレンジ）
 - `linear`（紫・青紫）
 - `labyrinth`（紺・金）

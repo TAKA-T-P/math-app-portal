@@ -99,6 +99,20 @@ const apps = [
     theme: "nazoten",
   },
   {
+    id: "fruit-maze",
+    category: "anyone",
+    title: "フルーツめいろ！",
+    subtitle: "",
+    grades: "小学4年生～",
+    catchphrase: "数字をヒントに、フルーツの道をつなごう！",
+    description:
+      "数字をヒントに、同じフルーツどうしを道でつなぐパズルゲームです。どこを通れば全部きれいにつながるか、じっくり考えてめいろを攻略しよう！タイムアタックにも挑戦できます。",
+    tags: ["数字パズル", "めいろ", "ひらめき・論理"],
+    icon: "🍓",
+    url: "https://TAKA-T-P.github.io/fruit-maze/",
+    theme: "fruit-maze",
+  },
+  {
     id: "factorization-game",
     category: "juniorhigh",
     title: "因数×展開 FIGHT!",

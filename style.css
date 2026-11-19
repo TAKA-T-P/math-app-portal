@@ -467,6 +467,11 @@ main {
   --accent-2: #06b6d4;
 }
 
+.app-card[data-theme="fruit-maze"] {
+  --accent-1: #d81b60;
+  --accent-2: #f06292;
+}
+
 .app-card[data-theme="factorization"] {
   --accent-1: #e53935;
   --accent-2: #ff9800;
