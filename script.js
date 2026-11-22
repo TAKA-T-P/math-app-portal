@@ -141,6 +141,20 @@ const apps = [
     theme: "linear",
   },
   {
+    id: "calculation-teacher",
+    category: "juniorhigh",
+    title: "計算ティーチャー！",
+    subtitle: "",
+    grades: "中学1年生〜中学3年生",
+    catchphrase: "キミは計算ミスを見抜けるか！？",
+    description:
+      "キミが数学の先生になって、生徒の計算答案を添削するゲームです。途中式を上から確認し、「最初に間違えた行」を見つけよう！計算ミスを見抜く力を鍛えながら、自分自身の計算力もレベルアップできます。",
+    tags: ["計算ミス発見", "途中式・添削", "認定試験"],
+    icon: "✏️",
+    url: "https://TAKA-T-P.github.io/calculation-teacher/",
+    theme: "calculation-teacher",
+  },
+  {
     id: "equal-labyrinth",
     category: "juniorhigh",
     title: "イコール・ラビリンス",

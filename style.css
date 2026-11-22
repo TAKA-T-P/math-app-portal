@@ -482,6 +482,11 @@ main {
   --accent-2: #7c4dff;
 }
 
+.app-card[data-theme="calculation-teacher"] {
+  --accent-1: #c62828;
+  --accent-2: #ef6c57;
+}
+
 .app-card[data-theme="labyrinth"] {
   --accent-1: #1a237e;
   --accent-2: #d4af37;

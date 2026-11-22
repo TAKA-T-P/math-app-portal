@@ -35,6 +35,7 @@ HTML / CSS / JavaScript のみで構成された静的サイトで、GitHub Page
 | --- | --- | --- |
 | 因数×展開 FIGHT! | 中学3年生 | https://taka-t-p.github.io/Factorization-game/ |
 | リニア×コネクト！ | 中学1年生・中学2年生 | https://taka-t-p.github.io/linear-connect/ |
+| 計算ティーチャー！ | 中学1年生〜中学3年生 | https://TAKA-T-P.github.io/calculation-teacher/ |
 | イコール・ラビリンス | 中学1年生〜中学3年生 | https://taka-t-p.github.io/equal-labyrinth/ |
 | 証明ハンター | 中学2年生 | https://taka-t-p.github.io/proof-hunter/ |
 
@@ -91,6 +92,7 @@ HTML / CSS / JavaScript のみで構成された静的サイトで、GitHub Page
 - `fruit-maze`（ストロベリーレッド・ピンク）
 - `factorization`（赤・オレンジ）
 - `linear`（紫・青紫）
+- `calculation-teacher`（赤ペンレッド・コーラル）
 - `labyrinth`（紺・金）
 - `proof`（ブラウン・アンバーゴールド）
 
